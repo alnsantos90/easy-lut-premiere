@@ -52,9 +52,11 @@ Testar LUTs no Premiere costuma ser lento: aplicar uma, olhar, trocar o arquivo 
 3. aplica a LUT escolhida no clipe (no grupo **Creative** do efeito Lumetri Color), com controle de intensidade.
 
 <div align="center">
-<img src="docs/assets/screenshot.png" alt="Interface do painel Easy LUT" width="380">
+<img src="docs/assets/screenshot.png" alt="Interface do painel Easy LUT" width="32%">
+<img src="docs/assets/screenshot2.png" alt="Favoritos exemplo" width="32%">
+<img src="docs/assets/screenshot3.png" alt="Utilização de coleções com pasta mais LUT adicionado" width="32%">
 <br>
-<sub>Interface do painel, com LUTs de exemplo.</sub>
+<sub>Interface do painel Easy LUT.</sub>
 </div>
 
 ---
