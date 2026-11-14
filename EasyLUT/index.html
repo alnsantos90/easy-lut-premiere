@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Easy LUT</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Easy LUT</h1>
+  <p>Pré-visualiza e aplica LUTs .cube direto no clipe.</p>
+</header>
+
+<div id="seqRow"><b>Sequência:</b> <span id="seqName">—</span></div>
+<button id="btnFrame" class="cta">Capturar Frame</button>
+
+<section id="compare">
+  <div id="cmpWrap">
+    <div id="cmp" class="slide">
+      <canvas id="cvAfter"></canvas>
+      <canvas id="cvBefore"></canvas>
+      <span id="chipBefore" class="chip left">Antes</span>
+      <span id="chipAfter" class="chip right">Depois</span>
+      <div id="divider"></div>
+    </div>
+  </div>
+  <label class="switch" title="Ativado: segurar o clique no preview mostra o original; soltar mostra a LUT selecionada">
+    <input id="clickMode" type="checkbox">
+    <span class="track"></span>
+    <span>Segurar clique para ver o antes</span>
+  </label>
+</section>
+
+<section id="lib">
+  <div class="rowhead"><h2>Biblioteca</h2></div>
+  <div id="folderRow">
+    <div id="folderPath">Nenhuma pasta selecionada</div>
+    <button id="btnFolder">Escolher pasta</button>
+  </div>
+
+  <div id="selRow">
+    <span id="selName">Selecione uma LUT</span>
+    <button id="btnApply" class="primary">Aplicar</button>
+    <button id="btnClear" title="Remove a LUT do clipe">Remover</button>
+  </div>
+  <div id="intRow">
+    <label for="intensity">Intensidade</label>
+    <input id="intensity" type="range" min="0" max="100" value="100">
+    <span id="intVal">100%</span>
+  </div>
+
+  <div id="tabs" role="tablist">
+    <button id="tabAll" class="tab on" role="tab" aria-selected="true">Todas <span id="allCount">0</span></button>
+    <button id="tabFav" class="tab" role="tab" aria-selected="false">Favoritos <span id="favCount">0</span></button>
+    <button id="tabCol" class="tab" role="tab" aria-selected="false">Coleções <span id="colCount">0</span></button>
+  </div>
+  <div id="colBar">
+    <div id="colTop">
+      <select id="colSel" aria-label="Coleção"></select>
+      <button id="btnColNew" class="sm" title="Criar uma nova coleção">Nova</button>
+    </div>
+    <div id="colFolderRow">
+      <div id="colFolderPath"></div>
+      <button id="btnColFolder" class="sm" title="Carregar uma pasta de LUTs nesta coleção">Carregar pasta</button>
+      <button id="btnColFolderClear" class="sm" title="Remover a pasta desta coleção (as LUTs adicionadas à mão ficam)">Tirar pasta</button>
+      <button id="btnColRename" class="sm" title="Renomear a coleção">Renomear</button>
+      <button id="btnColDelete" class="sm" title="Excluir a coleção">Excluir</button>
+    </div>
+  </div>
+  <div id="filters">
+    <input id="search" placeholder="Buscar LUT…">
+    <select id="cat"></select>
+  </div>
+  <div id="sizeRow">
+    <label for="thumbSize">Miniaturas</label>
+    <input id="thumbSize" type="range" min="130" max="320" step="2" value="140">
+    <span id="sizeVal">140 px</span>
+  </div>
+  <div id="grid"></div>
+</section>
+
+<div id="status"></div>
+
+<footer>
+  <span>Criado por Allan</span>
+  <span>Versão 1.7.1</span>
+</footer>
+
+<div id="modal" role="presentation">
+  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <h3 id="mTitle"></h3>
+    <p id="mMsg"></p>
+    <input id="mInput" maxlength="40" autocomplete="off" spellcheck="false">
+    <div id="mErr"></div>
+    <div class="mbtns">
+      <button id="mCancel">Cancelar</button>
+      <button id="mOk" class="primary">OK</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="t d">
+  <title id="t">Easy LUT para Adobe Premiere Pro</title>
+  <desc id="d">Banner do projeto Easy LUT com um comparador antes e depois.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1A1A"/>
+      <stop offset="0.65" stop-color="#232323"/>
+      <stop offset="1" stop-color="#2B1236"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d33"/><stop offset="0.166" stop-color="#e93"/>
+      <stop offset="0.333" stop-color="#ee4"/><stop offset="0.5" stop-color="#3b5"/>
+      <stop offset="0.666" stop-color="#3bd"/><stop offset="0.833" stop-color="#46e"/>
+      <stop offset="1" stop-color="#a4d"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".55"/>
+    </linearGradient>
+    <clipPath id="frame"><rect x="760" y="48" width="464" height="224" rx="14"/></clipPath>
+    <clipPath id="left"><rect x="760" y="48" width="232" height="224"/></clipPath>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="8" height="320" fill="#A404D9"/>
+
+  <!-- comparador antes / depois -->
+  <g clip-path="url(#frame)">
+    <rect x="760" y="48" width="464" height="224" fill="url(#chart)"/>
+    <rect x="760" y="48" width="464" height="224" fill="url(#shade)"/>
+    <g clip-path="url(#left)">
+      <rect x="760" y="48" width="464" height="224" fill="#6c6c6c"/>
+      <rect x="760" y="48" width="464" height="224" fill="url(#shade)"/>
+    </g>
+  </g>
+  <rect x="760" y="48" width="464" height="224" rx="14" fill="none" stroke="#444" stroke-width="2"/>
+  <line x1="992" y1="48" x2="992" y2="272" stroke="#fff" stroke-width="2"/>
+  <circle cx="992" cy="160" r="17" fill="#A404D9" stroke="#fff" stroke-width="2"/>
+  <path d="M986 160l5-5v10zM998 160l-5-5v10z" fill="#fff"/>
+  <rect x="776" y="62" width="64" height="24" rx="12" fill="#000" fill-opacity=".7"/>
+  <text x="808" y="79" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#fff">Antes</text>
+  <rect x="1130" y="62" width="78" height="24" rx="12" fill="#000" fill-opacity=".7"/>
+  <text x="1169" y="79" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#fff">Depois</text>
+
+  <!-- texto -->
+  <text x="72" y="140" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="76" font-weight="700" fill="#ECECEC" letter-spacing="-2">Easy <tspan fill="#CC6EF3">LUT</tspan></text>
+  <text x="74" y="186" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" fill="#A3A3A3">Pré-visualize e aplique LUTs .cube direto no clipe.</text>
+  <rect x="74" y="216" width="196" height="38" rx="19" fill="#A404D9"/>
+  <text x="172" y="241" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#fff">Adobe Premiere Pro</text>
+  <rect x="284" y="216" width="132" height="38" rx="19" fill="none" stroke="#444" stroke-width="2"/>
+  <text x="350" y="241" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#ECECEC">v1.7.1</text>
+</svg>

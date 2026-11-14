@@ -1,0 +1,21 @@
+# --- Build do instalador (fica só na máquina do mantenedor; o .exe vai para as Releases) ---
+Output/
+installer/
+build/
+*.iss
+*.exe
+*.zip
+
+# --- Depuração do CEP ---
+.debug
+
+# --- Sistema e editores ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# --- Outros ---
+node_modules/
+*.log
